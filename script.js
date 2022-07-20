@@ -1,14 +1,14 @@
 let m = prompt('Выбирите номер задания от 1 до 10');
+let day = prompt('Введите число');
 let a1 = 10,
     b = 2;
-// let name = prompt('Введите своё имя'),
-//     age = prompt('Введите свой возраст');
-    // city = prompt('Введите свой город'),
-    // phone = prompt('Введите своё телефон'),
-    // email = prompt('Введите своё почту'),
-    // company = prompt('Введите своё компанию'); 
+    // name = prompt('Введите своё имя'),
+    // age = prompt('Введите свой возраст');
 if(m == 1){
-   
+  let city = prompt('Введите свой город'),
+    phone = prompt('Введите своё телефон'),
+    email = prompt('Введите своё почту'),
+    company = prompt('Введите своё компанию');  
   console.log('Меня зовут', name, '.Мне', age,'лет. Я проживаю в городе', city,'и работаю в компании', company, '. Мои контактные данные:', phone, ',', email);  
 }
 else if(m == 2){
@@ -59,6 +59,115 @@ else if(m == 6){
         console.log('Неверно');
     }
 }
+else if(m == 7){
+    let n = prompt('Введите число от 0 до 59');
+    if (n >= 0 && n <= 14) {
+        console.log('В первую четверть.');
+    }
+    if (n >= 15 && n <= 30) {
+        console.log('Во вторую четверть.');
+    }
+    if (n >= 31 && n <= 45) {
+        console.log('В третью четверть.');
+    }
+    if (n >= 46 && n <= 59) {
+        console.log('В четвертую четверть.');
+    }
+}
+else if(m == 8){
+    if(day >= 1 && day <= 10){
+        console.log('В первую декаду.');
+    }
+    else if(day >= 11 && day <= 20){
+        console.log('В вторую декаду.');
+    }
+    else if(day >=21 && day <=31){
+        console.log('В третью декаду.');
+    }
+    else{
+        console.log('Число должно быть в промежутке от 1 до 31');
+    }
+}
+else if(m == 9){
+    let dny = prompt('Введите количнство дней');
+        god = dny / 365;
+        mes = dny / 31;
+        ned = dny / 7;
+        chas = dny * 24;
+        min = dny * 24 * 60;
+        sec = dny * 24 * 60 * 60;
+        console.log('Количество дней',dny)
+        console.log('Количество лет',god)
+        console.log('Количество месяцев',mes)
+        console.log('Количество недель',ned)
+        console.log('Количество часов',chas)
+        console.log('Количество минут',min)
+        console.log('Количество секунд',sec)
+}
+else if(m == 10){
+    if(day >= 1 && day <= 31){
+        console.log('Январь');
+    }
+    else if(day >= 31 && day <= 59){
+        console.log('Февраль');
+    }
+    else if(day >= 60 && day <= 90){
+        console.log('Март');
+    }
+    else if(day >= 91 && day <= 120){
+        console.log('Апрель');
+    }
+    else if(day >= 121 && day <= 151){
+        console.log('Май');
+    }
+    else if(day >= 152 && day <= 181)
+    {
+        console.log('Июнь');
+    }
+    else if(day >= 182 && day <= 212)
+    {
+        console.log('Июль');
+    }
+    else if(day >= 213 && day <= 243)
+    {
+        console.log('Август');
+    }
+    else if(day >= 244 && day <= 273)
+    {
+        console.log('Сентябрь');
+    }
+    else if(day >= 274 && day <= 304)
+    {
+        console.log('Октябрь');
+    }
+    else if(day >= 305 && day <= 334)
+    {
+        console.log('Ноябрь');
+    }
+    else if(day >= 335 && day <= 365)
+    {
+        console.log('Декабрь');
+    }
+    if(day >=1 && day <= 59){
+        console.log('Зима');
+    }
+    else if(day >=60 && day <= 151){
+        console.log('Весна');
+    }
+    else if(day >=152 && day <= 243){
+        console.log('Лето');
+    }
+    else if(day >=244 && day <= 334){
+        console.log('Осень');
+    }
+    else if(day >= 335 && day <= 365){
+        console.log('Зима');
+    }
+    else{
+        console.log('Введите другое число')
+    }
+}
 else{
     alert('Нет такого номера задания')
 }
+
