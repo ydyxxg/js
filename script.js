@@ -105,66 +105,79 @@ else if(m == 9){
         console.log('Количество секунд',sec)
 }
 else if(m == 10){
+    let num;
     if(day >= 1 && day <= 31){
+        num = 1;
         console.log('Январь');
     }
     else if(day >= 31 && day <= 59){
+        num = 2;
         console.log('Февраль');
     }
     else if(day >= 60 && day <= 90){
+        num = 3
         console.log('Март');
     }
     else if(day >= 91 && day <= 120){
+        num = 4
         console.log('Апрель');
     }
     else if(day >= 121 && day <= 151){
+        num = 5
         console.log('Май');
     }
-    else if(day >= 152 && day <= 181)
-    {
+    else if(day >= 152 && day <= 181){
+        num = 6
         console.log('Июнь');
     }
-    else if(day >= 182 && day <= 212)
-    {
+    else if(day >= 182 && day <= 212){
+        num = 7
         console.log('Июль');
     }
-    else if(day >= 213 && day <= 243)
-    {
+    else if(day >= 213 && day <= 243){
+        num = 8
         console.log('Август');
     }
-    else if(day >= 244 && day <= 273)
-    {
+    else if(day >= 244 && day <= 273){
+        num = 9
         console.log('Сентябрь');
     }
-    else if(day >= 274 && day <= 304)
-    {
+    else if(day >= 274 && day <= 304){
+        num = 10
         console.log('Октябрь');
     }
-    else if(day >= 305 && day <= 334)
-    {
+    else if(day >= 305 && day <= 334){
+        num = 11
         console.log('Ноябрь');
     }
-    else if(day >= 335 && day <= 365)
-    {
+    else if(day >= 335 && day <= 365){
+        num = 12;
         console.log('Декабрь');
     }
-    if(day >=1 && day <= 59){
-        console.log('Зима');
-    }
-    else if(day >=60 && day <= 151){
-        console.log('Весна');
-    }
-    else if(day >=152 && day <= 243){
-        console.log('Лето');
-    }
-    else if(day >=244 && day <= 334){
-        console.log('Осень');
-    }
-    else if(day >= 335 && day <= 365){
-        console.log('Зима');
-    }
-    else{
-        console.log('Введите другое число')
+
+    switch(num){
+        case 1:
+        case 2:
+        case 12:
+            console.log('Зима');
+            break;
+        case 3:
+        case 4:
+        case 5:
+           console.log('Весна'); 
+           break;
+        case 6:
+        case 7:
+        case 8:
+           console.log('Лето');
+           break;
+        case 9:
+        case 10:
+        case 11:
+           console.log('Осень');
+           break;
+           default:
+    alert('Что-то пошло не так'); 
     }
 }
 else{
