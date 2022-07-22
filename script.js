@@ -1,9 +1,9 @@
 let m = prompt('Выбирите номер задания от 1 до 10');
-let day = prompt('Введите число');
-let a1 = 10,
+    day = prompt('Введите число');
+    a1 = 10,
     b = 2;
-    // name = prompt('Введите своё имя'),
-    // age = prompt('Введите свой возраст');
+    name = prompt('Введите своё имя'),
+    age = prompt('Введите свой возраст');
 if(m == 1){
   let city = prompt('Введите свой город'),
     phone = prompt('Введите своё телефон'),
@@ -18,7 +18,7 @@ console.log(name,'родил(ась)ся в', year, 'году.')
 }
 else if(m == 3){
     let str = '123456',
-        sum1 = Number(str[0]) + Number(str[1])  + Number(str[2]) ,
+        sum1 = (+str[0]+ +str[1]+  +str[2]) ,
         sum2 = Number(str[3])  + Number(str[4])  + Number(str[5]) ;
     if(sum1 == sum2){
         console.log('да');
