@@ -96,13 +96,13 @@ else if(m == 9){
         chas = dny * 24;
         min = dny * 24 * 60;
         sec = dny * 24 * 60 * 60;
-        console.log('Количество дней',dny)
-        console.log('Количество лет',god)
-        console.log('Количество месяцев',mes)
-        console.log('Количество недель',ned)
-        console.log('Количество часов',chas)
-        console.log('Количество минут',min)
-        console.log('Количество секунд',sec)
+        console.log('Количество дней',dny);
+        console.log('Количество лет',god);
+        console.log('Количество месяцев',mes);
+        console.log('Количество недель',ned);
+        console.log('Количество часов',chas);
+        console.log('Количество минут',min);
+        console.log('Количество секунд',sec);
 }
 else if(m == 10){
     let num;
