@@ -102,7 +102,7 @@
 
 // Zad10
 console.log('--------------------Zad10-----------------------');
-let number = prompt('введите число'),
+let number = pro('введите число'),
     number_create;
     if (number<0){ //делаем число положительным
         number *=-1; 
