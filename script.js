@@ -102,11 +102,4 @@
 
 // Zad10
 console.log('--------------------Zad10-----------------------');
-let number = pro('введите число'),
-    number_create;
-    if (number<0){ //делаем число положительным
-        number *=-1; 
-    }
-    for (;number>0;number /=10){
-        number_create = number%10;
-    }
+
