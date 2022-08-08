@@ -11,7 +11,7 @@ let Contacts = function (name, age, phone, Email) {
 
     this.operation = function(){
         
-        if(this.age < 0 || this.age > 110){
+        if(this.age < 0 || this.age > 110 || Number.isInteger(!this.age)){
             this.age ='Ошибка. Возраст введён некорректно';
         }
         
@@ -43,4 +43,7 @@ let Contacts = function (name, age, phone, Email) {
 };
 let contacts_1 = new Contacts();
 contacts_1.get();
+
+let contacts_2 = new Contacts();
+contacts_2.get();
 
