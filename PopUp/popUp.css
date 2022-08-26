@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: rgb(230, 230, 230);
+}
+
+.popUp{
+    position: relative;
+    border: 1px solid #000;
+    margin: 50px;
+    overflow: hidden;
+}
+
+.btn{
+    margin-left: 20px;
+    border: none;
+    padding: 10px;
+   background: white;
+   border-radius: 5px;
+}
+
+.btn:hover{
+    background: rgb(207, 207, 207);
+    color: #000;
+}
+
+.active{
+    background: gray;
+    color: white;
+}
+
+.contener_img{
+    display: flex;
+    justify-content:space-between;
+}
+
+.content {
+    background: white;
+    padding: 10px;
+    margin: 20px 20px;
+    width: 40%;
+    height: 200px;
+
+}
