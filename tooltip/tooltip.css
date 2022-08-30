@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.tooltip{
+    color: red; 
+}
+
+.block{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.tooltip-element{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.908);
+    color: white;
+    width: 150px;
+}
